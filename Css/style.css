@@ -1,0 +1,384 @@
+@import url(basic.css);
+
+:root {
+    --light-blue: #71DFDF;
+    --dark-blue : #013E46;
+}
+
+@import url(//db.onlinewebfonts.com/c/4ff6a11cffa6e8559bd96d4fc1cfa275?family=SoleilW01-Regular);
+
+body {
+    color      : #666666;
+    font-size  : 18px;
+    line-height: 23px;
+    font-family: 'SoleilW01-Regular', sans-serif;
+    margin     : 0;
+}
+
+p,
+label {
+    margin-top : 0;
+    font-size  : 18px;
+    line-height: 23px;
+}
+
+h1,
+h2,
+h3 {
+    color      : var(--dark-blue);
+    font-weight: bold;
+    margin-top : 0;
+}
+
+h1 {
+    font-size    : 64px;
+    line-height  : 81px;
+    margin-bottom: 40px;
+
+}
+
+h2 {
+    font-size    : 48px;
+    line-height  : 61px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size  : 36px;
+    line-height: 46px;
+}
+
+h4 {
+    font-size  : 24px;
+    line-height: 29px;
+    color      : var(--light-blue);
+    font-weight: 400;
+}
+
+.text-light-blue {
+    color: var(--light-blue);
+}
+
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
+.background-light-blue {
+    background-color: var(--light-blue);
+}
+
+
+.background-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.border-dark-blue {
+    border-color: var(--dark-blue);
+}
+
+/* .container {
+    max-width    : 1376px;
+    margin-left  : auto;
+    margin-right : auto;
+    padding-left : 32px;
+    padding-right: 32px;
+} */
+
+.header {
+    display        : flex;
+    flex-flow      : row nowrap;
+    justify-content: space-between;
+    align-items    : center;
+    padding-top    : 47px;
+    margin-bottom  : 146px;
+}
+
+.header-cta-container {
+    display        : flex;
+    justify-content: flex-end;
+    gap            : 84px;
+    flex-flow      : row nowrap;
+    align-items    : center;
+    color          : #013E46;
+}
+
+.home-flex {
+    display        : flex;
+    flex-flow      : row nowrap;
+    justify-content: space-between;
+    align-items    : center;
+    margin-bottom  : 140px;
+}
+
+.home-flex p {
+    margin: 0;
+}
+
+/* .home-flex > div {
+    flex: 1 1 697px;
+} */
+
+.home-flex>div.home-flex-img {
+    flex-basis: 673px;
+}
+
+.home-flex-img img {
+    /* margin-left: 0; */
+    display   : block;
+    object-fit: cover;
+    width     : 100%;
+    height    : auto;
+}
+
+.header-container {
+    margin-bottom: 133px;
+}
+
+.smaller-container {
+    max-width: 1200px;
+}
+
+.smaller-container .home-flex {
+    gap: 44px;
+}
+
+.home-flex-text * {
+    width: fit-content;
+}
+
+.cta-btn {
+    background-color: var(--light-blue);
+    border-radius   : 4px;
+    padding         : 14px 45px;
+    font-weight     : 700;
+    color           : #013E46;
+    display         : block;
+    width           : 248px;
+    text-align      : center;
+    box-sizing      : border-box;
+    border          : none;
+    font-size       : 18px;
+    line-height     : 23px;
+    height          : fit-content;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+footer {
+    color: white;
+}
+
+.footer-container {
+    padding-top   : 95px;
+    padding-bottom: 77px;
+}
+
+
+.main-container .home-flex .home-flex-text,
+.form-container .home-flex .home-flex-text {
+    flex: 0 1 673px;
+}
+
+.main-container .home-flex .home-flex-img {
+    flex: 1;
+}
+
+.footer-background {
+    background-image: url("../Images/woman-reading-ereader-with-cup.jpg");
+
+}
+
+.footer-img-container {
+    max-width: 1212px;
+}
+
+.your-benefits-flex h3,
+.your-benefits-flex p {
+    margin: 0;
+}
+
+.your-benefits-flex .img-container {
+    height       : 114px;
+    margin-bottom: 48px;
+}
+
+.your-benefits-flex h3 {
+    margin-bottom: 48px;
+}
+
+.compensate-height {
+    display: grid;
+}
+
+.compensate-height>* {
+    grid-column: 1;
+    grid-row   : 1;
+}
+
+.form-container h4 {
+    margin-bottom: 18px;
+}
+
+
+.form-container h3 {
+    margin-bottom: 18px;
+}
+
+
+.form-side {
+    max-width: 528px;
+    width    : 100%;
+}
+
+.form-container .home-flex .home-flex-text {
+    max-width: 673px;
+}
+
+.form-img-container {
+    margin-left: 673px;
+    max-width  : 1000px;
+    margin-top: 190px;
+}
+
+.request-form .flex,
+.request-form input[type="text"],
+.request-form input[type="email"] {
+    width: 100%;
+}
+
+.request-form label {
+    margin-bottom: 5px;
+}
+
+.request-form input[type="text"],
+.request-form input[type="email"] {
+    background   : #FFFFFF;
+    border       : 1px solid #000000;
+    box-sizing   : border-box;
+    border-radius: 4px;
+    padding      : 14px 8px;
+    color        : #666666;
+    font-size: 18px;
+}
+
+footer h2, footer h3 {
+    margin-bottom: 0;
+}
+
+.contact-us-title {
+    flex: 1 1 694px;
+}
+
+.contact-us-btns {
+    flex: 0 1 568px;
+}
+
+.how-it-works-flex h4 {
+    color: var(--dark-blue);
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.how-it-works-flex p {
+    margin: 0;
+}
+
+.what-our-clients-say-container h3 {
+    margin-bottom: 4px;
+}
+
+.client-box {
+    border: 3px solid var(--light-blue);
+    border-radius: 25px;
+    padding: 0 26px 25px 37px;
+    min-height: 350px;
+}
+
+.client-box p {
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.client-box .text-right {
+    margin-top: auto;
+}
+
+.client-box img {
+    margin-top: -68px;
+    margin-bottom: 23px;
+    width: 136px;
+height: 136px;
+}
+
+.what-our-clients-say--subtitle {
+    margin-bottom: calc(72px + 68px);
+}
+
+
+footer a  {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 4px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
