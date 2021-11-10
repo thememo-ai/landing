@@ -11,7 +11,7 @@
 
 <body>
     <header class="container header-container">
-        <div class="header"><img src="Images/thememo-ai-dark.png" alt="" srcset="">
+        <div class="header"><img class="logo-img" src="Images/thememo-ai-dark.png" alt="" srcset="">
             <div class="header-cta-container"><a href="#process">Process</a><a href="#testimonials">Testimonials</a><a
                     href="#benefits">Benefits</a><a href="#form-container" class="cta-btn">Get
                     Started</a></div>
@@ -19,8 +19,8 @@
         </div>
     </header>
 
-    <div class="container main-container">
-        <div class="home-flex gap-9">
+    <div class="container main-container presentation-container">
+        <div class="home-flex">
             <div class="home-flex-text">
                 <h1>Pay for the article you actually read, <span class="text-light-blue">not for a subscription</span>
                 </h1>
@@ -34,58 +34,62 @@
         </div>
     </div>
 
-    <div class="container margin-bottom-9" id="process">
+    <div class="container how-it-works-container" id="process">
         <h2 class="text-light-blue font-weight-normal text-center margin-0 margin-bottom-6">How it works</h2>
-        <div class="flex flex-1-4 flex-row how-it-works-flex gap-12">
+        <div class="grid grid-1r-4c how-it-works-flex gap-12">
             <div class="flex flex-col flex-nowrap">
                 <div><img src="Images/mouse-clicking-https.svg" alt="" srcset="">
-                    <div class="compensate-height">
-                        <h4>1. Select one article <br> protected by a paywall.</h4>
-                        <h4 class="visibility-hidden">2. Share with us your <br> contact and venmo user</h4>
-                    </div>
+                    <h4 class="display-medium-up">1. Select one article <br> protected by a paywall.</h4>
                 </div>
-                <p>Select any article from any United States newspaper with a Paywall.</p>
+                <div>
+                    <h4 class="display-mobile-only">1. Select one article <br> protected by a paywall.</h4>
+
+                    <p>Select any article from any United States newspaper with a Paywall.</p>
+
+                </div>
             </div>
             <div class="flex flex-col flex-nowrap">
                 <div><img src="Images/mini-form.svg" alt="" srcset="">
                     <div class="">
-                        <h4>2. Share with us your <br> contact and venmo user</h4>
+                        <h4 class="display-medium-up">2. Share with us your <br> contact and venmo user</h4>
                         <!-- <h4 class="visibility-hidden">1. Select any article protected by a paywall.</h4> -->
 
                     </div>
                 </div>
-                <p>Specify your venmo username and the email where you want to receive the article.</p>
+                <div>
+                    <h4 class="display-mobile-only">2. Share with us your <br> contact and venmo user</h4>
+                    <p>Specify your venmo username and the email where you want to receive the article.</p>
+                </div>
             </div>
             <div class="flex flex-col flex-nowrap">
                 <div><img src="Images/venmo.svg" alt="" srcset="">
-                    <div class="compensate-height">
-                        <h4>3. You just pay 25 <br> cents through Venmo</h4>
-                        <h4 class="visibility-hidden">2. Share with us your <br> contact and venmo user</h4>
+                    <h4 class="display-medium-up">3. You just pay 25 <br> cents through Venmo</h4>
 
-                    </div>
                 </div>
-                <p>It cost a lot less than a snicker.</p>
+                <div>
+                    <h4 class="display-mobile-only">3. You just pay 25 <br> cents through Venmo</h4>
+                    <p>It cost a lot less than a snicker.</p>
+                </div>
             </div>
             <div class="flex flex-col flex-nowrap">
                 <div><img src="Images/article-send.svg" alt="" srcset="">
-                    <div class="compensate-height">
-                        <h4>4. We send your <br> brand new article</h4>
-                        <h4 class="visibility-hidden">2. Share with us your <br> contact and venmo user</h4>
-
-                    </div>
+                    <h4 class="display-medium-up">4. We send your <br> brand new article</h4>
                 </div>
+                <div>
+                    <h4 class="display-mobile-only">4. We send your <br> brand new article</h4>
                 <p>We will send the article to you within the hour.</p>
+
+                </div>
             </div>
         </div>
     </div>
     </div>
     </div>
 
-    <div class="container what-our-clients-say-container margin-bottom-24" id="testimonials">
+    <div class="container what-our-clients-say-container" id="testimonials">
         <h3 class="text-center text-light-blue">What our clients say</h3>
-        <p class="text-dark-blue text-center what-our-clients-say--subtitle">Our clients send us bunch of smilies with
-            our services and we love them </p>
-        <div class="flex flex-1-3 gap-7">
+        <p class="text-dark-blue text-center what-our-clients-say--subtitle">Here we share a few of our happy clients reviews</p>
+        <div class="flex flex-1-3 gap-7 what-our-clients-say-flex">
             <div class="flex flex-col client-box"><img src="Images/client-1.png" alt="" srcset="">
                 <p>I am a student and I do a lot of research for my user experience research classes, but having many
                     subscriptions to newspapers is not ideal for my budget.
@@ -111,7 +115,7 @@
         </div>
     </div>
 
-    <div class="background-pale-blue padding-top-4 padding-bottom-7 margin-bottom-32">
+    <div class="background-pale-blue padding-top-4 padding-bottom-7 your-benefits-container">
         <div class="container" id="benefits">
             <h2 class="text-light-blue font-weight-normal text-center margin-0 margin-bottom-5">Your benefits</h2>
 
@@ -120,30 +124,20 @@
                     <div class="flex flex-col align-center justify-start text-center">
                         <div class="img-container object-contain"><img src="Images/piggy-bank.svg" alt="" srcset="">
                         </div>
-                        <div class="compensate-height">
-                            <h3>Pay only for what you want to read</h3>
-                            <h3 class="visibility-hidden float-right">Any article in any newspaper in the U.S.</h3>
-                        </div>
-                        <p>Pay individually for the items you are interested in, this allows you to save money and time.
+                        <h3>Pay only for what you want to read</h3>
+                        <p>We believe that less is more.
                         </p>
                     </div>
                     <div class="flex flex-col align-center justify-start text-center">
                         <div class="img-container object-contain"><img src="Images/newspapper.svg" alt="" srcset="">
                         </div>
-                        <div class="compensate-height">
-                            <h3>No subscriptions or fixed monthly fees</h3>
-                            <h3 class="visibility-hidden float-right">Any article in any newspaper in the U.S.</h3>
-                        </div>
-                        <p>You are the owner of your time and money. By paying for items you don't need to subscribe to
-                            any
-                            service with payments that will be charged even if you don't use the service.</p>
+                        <h3>No subscriptions or fixed monthly fees</h3>
+                        <p>You can save the difference for a capuchino.</p>
                     </div>
                     <div class="flex flex-col align-center justify-start text-center">
                         <div class="img-container object-contain"><img src="Images/chains.svg" alt="" srcset=""></div>
                         <h3>Any article in any newspaper in the U.S.</h3>
-                        <p>You don't have to limit yourself to articles from a single newsletter, select articles from
-                            any
-                            newsletter in the United States and we will get it all for you.</p>
+                        <p>The freedom of reading what you want.</p>
                     </div>
                 </div>
             </div>
@@ -154,8 +148,9 @@
         <div class="container form-container">
             <div class="home-flex">
                 <div class="home-flex-text">
-                    <h1 class="margin-bottom-10">Ready to get the items that you really matter? <img
-                            class="form-horizontal-line" src="Images/form-horizontal-line.svg" alt="" srcset=""> </h1>
+                    <h1 class="margin-bottom-10">Ready to get the items that you really matter? <div
+                            class="form-horizontal-line background-lighter-blue"></div>
+                    </h1>
                     <div class="form-side">
                         <div class="margin-bottom-13 form-wrapper" id="form-container">
                             <h4>Step 1</h4>
@@ -171,7 +166,7 @@
                                             placeholder="Paste your article link here">
                                     </div>
 
-                                    <div class="flex flex-row flex-nowrap gap-8">
+                                    <div class="flex flex-row flex-nowrap gap-8 form-row-2">
 
                                         <div class="flex flex-col flex-nowrap">
                                             <label class="text-dark-blue font-weight-bold" for="your-name">Venmo
@@ -192,37 +187,41 @@
 
                             </form>
                         </div>
-                        <div class="margin-bottom-13">
+                        <div class="margin-bottom-13 step-2-container">
                             <h4>Step 2</h4>
                             <h3>Pay USD$0.25 to <span class="text-light-blue">@Nelson-Munoz-1</span> on Venmo</h3>
                             <a class="cta-btn margin-top-5" href="https://venmo.com/" target="_blank">Go to Venmo</a>
                         </div>
 
-                        <div>
+                        <div class="step-2-container step-3-container">
                             <h4>Step 3</h4>
                             <h3>Wait for your article</h3>
-                            <p>Your item will be available within 1 hour. Just wait a little while and You're done! You
-                                will have your complete file ready to be read.</p>
+                            <p>Your item will be available within 1 hour. We will send you a PDF with article.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="object-cover position-absolute right-0 top-0 form-img-container">
-            <img src="Images/form-img.svg" alt="" srcset="">
+        <div class="object-contain position-absolute right-0 top-0 form-img-container">
+            <img class="form-img-desktop" src="Images/form-img.svg" alt="" srcset="">
+            <img class="form-img-medium display-medium-only" src="Images/form-img-medium.svg" alt="" srcset="">
         </div>
+        <img class="display-mobile-only width-100-pc" src="Images/form-img-mobile.svg" alt="" srcset="">
+    </div>
+
+    <div class="flex-medium-down fixed-get-started">
+        <a href="#form-container" class="cta-btn">Get Started</a>
     </div>
 
     <footer class="">
-        <div class="background-pale-blue margin-bottom-22 padding-top-10 padding-bottom-12">
+        <div class="background-pale-blue margin-bottom-22 padding-top-10 padding-bottom-12 contact-us-container">
             <div class="container">
-                <div class="">
+                <div class="contact-us-wrapper">
                     <h2 class="text-light-blue">Contact Us</h2>
                     <div class="flex flex-row flex-nowrap gap-21 align-center contact-us-title">
                         <h3>Have you encountered any problems or have any questions?</h3>
-                        <div class="flex flex-row flex-nowrap gap-9 contact-us-btns">
-                            <a class="cta-btn">Mail us</a>
-                            <a class="cta-btn">Call us</a>
+                        <div>
+                            <a class="cta-btn background-dark-blue">Mail us</a>
                         </div>
                     </div>
                 </div>
@@ -230,18 +229,22 @@
         </div>
         <div class="background-dark-blue">
             <div class="container footer-container">
-                <div class="flex flex-no-wrap justify-between">
+                <div class="flex flex-no-wrap justify-between display-desktop-only">
                     <div>
                         <img src="Images/thememo-ai-light.png" alt="" srcset="">
                     </div>
-                    <div class="opactity-half">
-                        <p>2021 thememo.ai</p>
-                    </div>
+                    <p class="opactity-half flex flex-no-wrap align-center">2021 thememo.ai</p>
                     <div class="flex justify-center align-center gap-6">
                         <a id="terms-and-conditions">Terms & Conditions</a>
                         <a id="policy">Privacy Policy</a>
                     </div>
                 </div>
+                <div class="flex flex-desktop-medium-down justify-center align-start gap-6 margin-x-auto terms-policy-flex">
+                    <a id="terms-and-conditions-medium-small">Terms & Conditions</a>
+                    <p class="opactity-half flex flex-no-wrap align-center thememo-name">2021 thememo.ai</p>
+                    <a id="policy-medium-small">Privacy Policy</a>
+                </div>
+
             </div>
         </div>
     </footer>
@@ -274,6 +277,9 @@
         // Get the button that opens the modal
         var Termsbtn = document.getElementById("terms-and-conditions");
         var Policybtn = document.getElementById("policy");
+        
+        var TermsbtnMediumSmall = document.getElementById("terms-and-conditions-medium-small");
+        var PolicybtnMediumSmall = document.getElementById("policy-medium-small");
 
         // Get the <span> element that closes the modal
         var TermsSpan = document.getElementsByClassName("close-terms")[0];
@@ -284,6 +290,12 @@
             TermsModal.style.display = "block";
         }
         Policybtn.onclick = function () {
+            PolicyModal.style.display = "block";
+        }        
+        TermsbtnMediumSmall.onclick = function () {
+            TermsModal.style.display = "block";
+        }
+        PolicybtnMediumSmall.onclick = function () {
             PolicyModal.style.display = "block";
         }
 
