@@ -70,6 +70,14 @@ row2 row2 */
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid.grid-2r-4c {
+    grid-template-columns: repeat(4, 2fr);
+}
+
+.grid.grid-2r-3c {
+    grid-template-columns: repeat(3, 2fr);
+}
+
 
 /* grid end */
 
